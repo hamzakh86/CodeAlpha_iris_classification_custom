@@ -1,112 +1,131 @@
-# Classification des Fleurs d'Iris - Projet Personnalisé
+# Iris Flower Classification - Custom Project
 
 ## Description
-Ce projet implémente une solution complète de classification des fleurs d'Iris avec des améliorations par rapport au projet de référence. Il inclut plusieurs algorithmes de machine learning, une interface Streamlit interactive, et des visualisations avancées.
 
-## Fonctionnalités
-- 7 algorithmes de classification différents
-- Interface web interactive avec Streamlit
-- Visualisations avancées des données
-- Optimisation automatique des hyperparamètres
-- Métriques d'évaluation complètes
-- Sauvegarde du meilleur modèle
+This project implements a complete Iris flower classification solution with enhancements over the reference project. It includes several machine learning algorithms, an interactive Streamlit interface, and advanced visualizations.
+
+## Features
+
+*   7 different classification algorithms
+*   Interactive web interface with Streamlit
+*   Advanced data visualizations
+*   Automatic hyperparameter optimization
+*   Comprehensive evaluation metrics
+*   Best model saving
 
 ## Installation
 
-### Prérequis
-- Python 3.7 ou plus récent
-- pip (gestionnaire de paquets Python)
+### Prerequisites
 
-### Étapes d'installation
+*   Python 3.7 or newer
+*   pip (Python package manager)
 
-1. **Décompresser l'archive**
-   ```bash
-   tar -xzf iris_classification_custom.tar.gz
-   cd iris_classification_custom
-   ```
+### Installation Steps
 
-2. **Installer les dépendances**
-   ```bash
-   pip install pandas numpy matplotlib seaborn scikit-learn streamlit plotly
-   ```
+1.  **Decompress the archive**
+    
+    ```shell
+    tar -xzf iris_classification_custom.tar.gz
+    cd iris_classification_custom
+    ```
+    
+2.  **Install dependencies**
+    
+    ```shell
+    pip install pandas numpy matplotlib seaborn scikit-learn streamlit plotly
+    ```
+    
+3.  **Run model training (optional)**
+    
+    ```shell
+    python iris_classification_enhanced.py
+    ```
+    
+4.  **Launch the Streamlit application**
+    
+    ```shell
+    streamlit run streamlit_app.py
+    ```
+    
+5.  **Access the application** Open your browser and go to the displayed address (usually [http://localhost:8501]())
+    
 
-3. **Exécuter l'entraînement du modèle (optionnel)**
-   ```bash
-   python iris_classification_enhanced.py
-   ```
+## Project Structure
 
-4. **Lancer l'application Streamlit**
-   ```bash
-   streamlit run streamlit_app.py
-   ```
+    iris_classification_custom/
+    ├── iris_classification_enhanced.py    # Main training script
+    ├── streamlit_app.py                   # Streamlit web application
+    ├── iris_classification_main.ipynb     # Modified Jupyter Notebook
+    ├── best_iris_model.pkl               # Pre-trained model
+    ├── iris_data_visualization.png       # Data visualizations
+    ├── confusion_matrix.png              # Confusion matrix
+    └── model_comparison.png              # Model comparison
+    
 
-5. **Accéder à l'application**
-   Ouvrez votre navigateur et allez à l'adresse affichée (généralement http://localhost:8501)
+## Usage
 
-## Structure du projet
+### Python Script
 
-```
-iris_classification_custom/
-├── iris_classification_enhanced.py    # Script principal d'entraînement
-├── streamlit_app.py                   # Application web Streamlit
-├── iris_classification_main.ipynb     # Notebook Jupyter modifié
-├── best_iris_model.pkl               # Modèle pré-entraîné
-├── iris_data_visualization.png       # Visualisations des données
-├── confusion_matrix.png              # Matrice de confusion
-└── model_comparison.png              # Comparaison des modèles
-```
-
-## Utilisation
-
-### Script Python
-```bash
+```shell
 python iris_classification_enhanced.py
 ```
-Ce script exécute le pipeline complet : chargement des données, entraînement des modèles, évaluation et sauvegarde.
 
-### Application Streamlit
-```bash
+This script executes the complete pipeline: data loading, model training, evaluation, and saving.
+
+### Streamlit Application
+
+```shell
 streamlit run streamlit_app.py
 ```
-Lance l'interface web interactive pour :
-- Explorer les données
-- Faire des prédictions en temps réel
-- Visualiser les résultats
 
-### Notebook Jupyter
-```bash
+Launches the interactive web interface for:
+
+*   Exploring data
+*   Making real-time predictions
+*   Visualizing results
+
+### Jupyter Notebook
+
+```shell
 jupyter notebook iris_classification_main.ipynb
 ```
-Version notebook pour l'exploration interactive.
 
-## Modèles implémentés
-1. Régression Logistique
-2. K-Plus Proches Voisins (KNN)
-3. Machine à Vecteurs de Support (SVM)
-4. Naive Bayes
-5. Arbre de Décision
-6. Forêt Aléatoire
-7. Gradient Boosting
+Notebook version for interactive exploration.
 
-## Métriques d'évaluation
-- Accuracy (Précision)
-- Precision (Précision par classe)
-- Recall (Rappel)
-- F1-Score
-- Validation croisée
+## Implemented Models
 
-## Améliorations par rapport au projet original
-- Ajout de nouveaux algorithmes (Random Forest, Gradient Boosting)
-- Interface Streamlit interactive
-- Optimisation automatique des hyperparamètres
-- Visualisations avancées avec Plotly
-- Métriques d'évaluation étendues
-- Code modulaire et orienté objet
-- Documentation complète
+1.  Logistic Regression
+2.  K-Nearest Neighbors (KNN)
+3.  Support Vector Machine (SVM)
+4.  Naive Bayes
+5.  Decision Tree
+6.  Random Forest
+7.  Gradient Boosting
 
-## Auteur
-Hamza Khaled - Projet de stage en Data Science
+## Evaluation Metrics
 
-## Licence
-Ce projet est développé dans le cadre d'un stage académique.
+*   Accuracy
+*   Precision
+*   Recall
+*   F1-Score
+*   Cross-validation
+
+## Improvements over the original project
+
+*   Addition of new algorithms (Random Forest, Gradient Boosting)
+*   Interactive Streamlit interface
+*   Automatic hyperparameter optimization
+*   Advanced visualizations with Plotly
+*   Extended evaluation metrics
+*   Modular and object-oriented code
+*   Complete documentation
+
+## Author
+
+Hamza Khaled - Data Science Internship Project
+
+## License
+
+This project is developed as part of an academic internship.
+
 
